@@ -5,6 +5,12 @@ public class Alfil {
 	private Color color;
 	private Posicion posicion;
 	
+	//Creamos el construcstor de la clase Alfil llamamos al enumerador con el valor correspondiente para dicha variable
+	public Alfil() {
+		color = Color.NEGRO;
+		posicion = new Posicion(8,'f');
+	}
+	
 	//Creamos los metodos get y set para dicha clase con sus excepciones
 	public Color getColor() {
 		return color;
