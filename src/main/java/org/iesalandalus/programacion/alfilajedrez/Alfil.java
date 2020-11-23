@@ -2,8 +2,8 @@ package org.iesalandalus.programacion.alfilajedrez;
 
 public class Alfil {
 	//Creamos los atributos de Color y posicion de enumerador Color y Clase posición respectivamente
-	public Color color;
-	public Posicion posicion;
+	private Color color;
+	private Posicion posicion;
 	
 	//Creamos los metodos get y set para dicha clase con sus excepciones
 	public Color getColor() {
