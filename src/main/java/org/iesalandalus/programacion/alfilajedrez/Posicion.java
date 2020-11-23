@@ -37,7 +37,7 @@ public class Posicion {
 	private void setColumna(char columna) {
 		if (columna < 'a' || columna > 'h') {
 			
-			throw new IllegalArgumentException("Error: Columna no válida.");
+			throw new IllegalArgumentException("ERROR: Columna no válida.");
 		}
 		this.columna = columna;
 	}
@@ -62,6 +62,10 @@ public class Posicion {
 		if (fila != other.fila)
 			return false;
 		return true;
+	}
+	
+	public String toString() {
+		return String.format("fila=%s, columna=%s", fila, columna);
 	}
 	
 }
