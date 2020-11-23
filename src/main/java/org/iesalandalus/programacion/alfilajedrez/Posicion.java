@@ -63,7 +63,7 @@ public class Posicion {
 			return false;
 		return true;
 	}
-	
+	//Creamos el toString para devolver un String de fila y columna
 	public String toString() {
 		return String.format("fila=%s, columna=%s", fila, columna);
 	}
