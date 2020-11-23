@@ -10,6 +10,17 @@ public class Alfil {
 		color = Color.NEGRO;
 		posicion = new Posicion(8,'f');
 	}
+	//Realizar color blanco si la posicion es 1f y sino es negro en la posición 8f
+	public Alfil(Color color) {
+		setColor(color);
+		if (color == Color.BLANCO) {
+			posicion = new Posicion(1,'f');
+		}
+		else {
+			color = Color.NEGRO;
+			posicion = new Posicion(8,'f');	
+		}
+	}
 	
 	//Creamos los metodos get y set para dicha clase con sus excepciones
 	public Color getColor() {
